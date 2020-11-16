@@ -1,0 +1,66 @@
+<!-- Calculator using html+css+js 
+16.11.2020 Jaydeep Sahu -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css" type="text/css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div style="margin-top:15px;">
+        <h1 style="text-decoration: underline; color: blueviolet; text-align: center;">SIMPLE CALCULATOR BY JAYDEEP SAHU</h1>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <input type="number" class="input-panel" name="number" id="number" placeholder="ENTER NUMBER HERE.." maxlength="9" required>
+            <input type="number" class="input-panel" name="result" id="result" placeholder="RESULT WILL APPEAR HERE.." maxlength="9">
+        </div>
+        <div class="main">
+            <div class="numbers">
+                <div class="row">
+                    <button class="numeric" onclick="numPress('7');">7</button>
+                    <button class="numeric" onclick="numPress('8');">8</button>
+                    <button class="numeric" onclick="numPress('9');">9</button>
+                </div>
+                <div class="row">
+                    <button class="numeric" onclick="numPress('4');">4</button>
+                    <button class="numeric" onclick="numPress('5');">5</button>
+                    <button class="numeric" onclick="numPress('6');">6</button>
+                </div>
+                <div class="row">
+                    <button class="numeric" onclick="numPress('1');">1</button>
+                    <button class="numeric" onclick="numPress('2');">2</button>
+                    <button class="numeric" onclick="numPress('3');">3</button>
+                </div>
+                <div class="row">
+                    <button class="numeric" onclick="numPress('0');" style="width: 250px;">0</button>
+                </div>
+            </div>
+            <div class="operators">
+                <div class="row">
+                    <button onclick="addition();" id="plus">+</button>
+                    <button onclick="subtraction();" id="minus">-</button>
+                    <button onclick="multiplication();" id="into">X</button>
+                </div>
+                <div class="row">
+                    <button onclick="division();" id="divide">/</button>
+                    <button style="color:green; width: 155px; background-color: yellow;" onclick="calculate();">=</button>
+                </div>
+                <div class="row">
+                    <button style="background-color:green; color:white;" onclick="sqr();">Sqr</button>
+                    <button style=" background-color:hotpink; color:white; " onclick="backSpace(); ">C</button>
+                    <button style="background-color:red; color:white; " onclick="allClear(); ">AC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
